@@ -1,0 +1,38 @@
+$icon-font-path: '../fonts/';
+@import "../fonts/fontawesome5/web-fonts-with-css/css/fontawesome-all.min.css";
+// Required bootstrap don't touch
+@import "./bower_components/bootstrap4/scss/functions";
+@import "./bower_components/bootstrap4/scss/variables";
+@import "./bower_components/bootstrap4/scss/mixins";
+// End bootstrap
+// Optional bootstrap
+@import "./bower_components/bootstrap4/scss/reboot";
+@import "./bower_components/bootstrap4/scss/grid";
+// End optional
+
+
+// optional ember-burger-menu
+// optional end
+// Fonts
+@import "_fonts";
+// End Fonts
+//  Custom variables
+@import "vars";
+// End variables
+// help styles
+@import "_helpers";
+@import "_header";
+@import "_hamburger";
+@import "_intro";
+@import "_about";
+@import "_services";
+@import "_news";
+@import "_newsDetail";
+@import "_listNews";
+@import "_training";
+@import "_slide";
+@import "_gallery";
+@import "_reviews";
+@import "_video";
+@import "_copyAg";
+@import "_footer";

@@ -1,0 +1,109 @@
+.flabServices {
+  background-color: #eff0f7;
+  padding: rem(50) 0 rem(30);
+
+  @media (max-width: 1199.98px) {
+    padding: rem(40) 0 rem(20);
+  }
+
+  @media (max-width: 991.98px) {
+    padding: rem(35) 0 rem(15);
+  }
+
+  @media (max-width: 767.98px) {
+    padding: rem(30) 0 rem(10);
+  }
+
+  @media (max-width: 575.98px) {
+    padding: rem(25) 0 rem(0);
+  }
+
+  &__item {
+    max-width: rem(358);
+    width: 100%;
+    min-height: rem(390);
+    background-color: $wc;
+    padding-top: rem(78);
+    padding-left: rem(42);
+    padding-right: rem(42);
+    padding-bottom: rem(50);
+    margin-bottom: rem(25);
+    box-shadow: 0 rem(10) rem(13.6) rem(0.4) rgba(0, 0, 0, 0.1);
+    position: relative;
+    counter-increment: my-awesome-counter;
+
+    @media (max-width: 1199.98px) {
+      padding-top: rem(48);
+      padding-left: rem(20);
+      padding-right: rem(20);
+      padding-bottom: rem(25);
+    }
+
+    @media (max-width: 767.98px) {
+      padding-top: rem(30);
+      padding-left: rem(15);
+      padding-right: rem(15);
+      padding-bottom: rem(20);
+    }
+
+    @media (max-width: 575.98px) {
+      margin: 0 auto rem(30);
+    }
+
+    &:before {
+      content: counter(my-awesome-counter);
+      position: absolute;
+      bottom: rem(40);
+      right: rem(39);
+      font-size: rem(200);
+      color: rgba(157, 79, 194, 0.1);
+      font-weight: 600;
+      line-height: rem(141);
+
+      @media (max-width: 1199.98px) {
+        font-size: rem(170);
+      }
+
+      @media (max-width: 767.98px) {
+        font-size: rem(150);
+      }
+    }
+  }
+
+  &__caption {
+    color: $sc;
+    font-size: rem(24);
+    font-weight: 800;
+    line-height: 1.25;
+    padding-bottom: rem(26);
+    margin: 0;
+
+    @media (max-width: 1199.98px) {
+      font-size: rem(22);
+      padding-bottom: rem(15);
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: rem(18);
+    }
+  }
+
+  &__desc {
+    font-size: rem(20);
+    color: $sc;
+    line-height: 1.5;
+    margin: 0;
+
+    @media (max-width: 1199.98px) {
+      font-size: rem(19);
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: rem(17);
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: rem(17);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.flabSlide {
+  .flabSlider {
+    padding-bottom: rem(42);
+
+    @media (max-width: 1199.98px) {
+      padding-bottom: rem(35);
+    }
+
+    @media (max-width: 991.98px) {
+      padding-bottom: rem(30);
+    }
+
+    @media (max-width: 767.98px) {
+      padding-bottom: rem(30);
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: rem(80);
+  }
+}

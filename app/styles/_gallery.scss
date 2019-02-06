@@ -1,0 +1,70 @@
+.flabGallery {
+  background-color: #eff0f7;
+
+  padding: rem(50) 0 0;
+
+  @media (max-width: 1199.98px) {
+    padding: rem(40) 0 0;
+  }
+
+  @media (max-width: 991.98px) {
+    padding: rem(35) 0 0;
+  }
+
+  @media (max-width: 767.98px) {
+    padding: rem(30) 0 0;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: rem(25) 0 0;
+  }
+
+  .flabGallery__wrap {
+    padding: 0;
+  }
+
+  &__item {
+    max-width: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+
+    @media (max-width: 575.98px) {
+      max-width: rem(320);
+      margin: 0 auto rem(30);
+      display: block;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+        transform: translateY(-50%) translateX(-50%) scale(1);
+      }
+    }
+
+    &:before {
+      content: "";
+      font-family: "Font Awesome 5 pro";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%) scale(3);
+      color: $wc;
+      font-size: rem(36);
+      opacity: 0;
+      transition: all .5s;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__hiddenItem {
+    display: none;
+  }
+}

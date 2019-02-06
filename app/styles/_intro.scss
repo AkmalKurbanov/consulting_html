@@ -1,0 +1,108 @@
+.flabIntro {
+  position: relative;
+  min-height: rem(780);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1199.98px) {
+    min-height: rem(600);
+  }
+
+  @media (max-width: 991.98px) {
+    min-height: rem(550);
+  }
+
+  @media (max-width: 767.98px) {
+    min-height: rem(400);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../images/video/curtains.png');
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__video {
+    position: absolute;
+    margin-top: rem(540);
+    top: 0;
+    left: 50%;
+    min-width: 100%;
+    min-height: rem(780);
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: -1;
+
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  &__captionWrap {
+    position: relative;
+    text-align: center;
+  }
+
+  &__caption {
+    font-size: rem(50);
+    font-weight: 800;
+    color: $wc;
+    text-align: center;
+    margin-bottom: rem(70);
+
+    @media (max-width: 1199.98px) {
+      font-size: rem(40);
+      margin-bottom: rem(50);
+    }
+
+    @media (max-width: 991.98px) {
+      font-size: rem(30);
+      margin-bottom: rem(30);
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: rem(20);
+      margin-bottom: rem(20);
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: rem(18);
+      margin-bottom: rem(15);
+    }
+  }
+
+  &__desc {
+    font-size: rem(21);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+
+    @media (max-width: 1199.98px) {
+      font-size: rem(20);
+    }
+
+    @media (max-width: 991.98px) {
+      font-size: rem(19)
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: rem(18)
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: rem(16)
+    }
+  }
+}
